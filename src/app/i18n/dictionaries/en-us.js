@@ -19,21 +19,21 @@ export default {
   "projects": {
     "title": "Projects",
     "rpgaming_pc": {
-      "title": "Lottery Platform",
-      "brand": "Online Lottery Network",
+      "title": "B2B Site Hosting Platform",
+      "brand": "White-Label SaaS Platform",
       "description": `
-      A lottery network platform for customers to deposit, place bets, and withdraw funds, with an integrated user discussion forum and automated betting robots, complemented by an agent system to implement downstream profit-sharing among users.
-      <br/><br/>Tech stack included the use of VueJS combined with SCSS, with separated desktop and mobile applications. This includes creating betting logic for various lotteries, such as composite lotteries and Macau lotteries, as well as designing more complex frontend interfaces such as "bead roads" and trend charts. Implemented features include automatic betting, member reward systems, platform customer service, event notifications, and user discussion forums. Additionally, payment functions like online QR code payments and deposit functions through exchanges were developed. A frontend skin-changing feature was implemented, allowing different CSS styles to be swapped with animations under the same logic to achieve skin changes.
-      <br/><br/>I was responsible for setting up the initial code architecture and establishing code standards. Managed the frontend task allocation and personnel scheduling for the sub-projects of this project. After successfully launching the project, continued to maintain and operate the frontend of the project, including collecting user feedback for optimization and customization adjustments. The project, once launched, achieved a significant improvement in loading speed and user experience compared to previous products, successfully increasing user retention and thereby boosting product revenue.
+      A B2B platform serving as a white-label SaaS solution for customers to host their own sites and receive ongoing maintenance services, supporting downstream operators with customizable site deployments.
+      <br/><br/>Tech stack included VueJS combined with SCSS, with separate desktop and mobile web versions. Implemented features include member reward systems, platform customer service, event notifications, user discussion forums, online payment functions, and a frontend theming feature allowing different CSS styles to be swapped with animations under the same logic to achieve dynamic skin changes.
+      <br/><br/>Responsible for setting up the initial code architecture and establishing code standards. Managed frontend task allocation and personnel scheduling for sub-projects. After launch, continued to maintain and operate the frontend, collecting user feedback for optimization and customization. The platform achieved significant improvements in loading speed and user experience, successfully increasing user retention and boosting product revenue.
       `
     },
     "cgc": {
-      "title": "Web3 Gaming APP Center",
-      "brand": "Web3 Gaming Ecosystem",
+      "title": "Gaming APP Center",
+      "brand": "Gaming Ecosystem",
       "description": `
-      The platform's priority was to assist partners in the game development industry in constructing a token launchpad and a marketplace for trading in-game items that was generated into NFTs (similar to Steam, but with NFTs). The platform provided blockchain technologies such as token staking, token swaps, token claims, NFT minting, secondary NFT trading platforms, and lootbox openings, supporting Ethereum and Solana chains. Built centralized member functions, offering users to bind wallets of multiple chains in one setup. The platform was launched along with its own ecosystem token. On the first day of the product launch, it reached hundreds of users, and within a week, it reached a thousand users, with an early-stage product sell-through rate of 90%.
-      <br/><br/>The platform's frontend utilized NextJS and TailwindCSS, with features including the token launch platform, ERC20 token trading, staking, flash swaps, and NFT marketplace functionalities. Designed H5 animations and interactive effects to achieve an industry-popular art style.
-      <br/><br/>I was responsible for constructing the code architecture and established frontend development standards, arranged project schedules, and allocated personnel. Collaborated with UI and product teams to determine screen logic and art style, and worked with backend developers on the centralized membership system. Assisted in building the product from scratch and helped launch the platform's ecosystem token. After the product launch, collected user feedback and performed frontend performance tuning, art adjustments, and partial frontend code refactoring, optimizing the loading speed for the homepage and some marketplace pages.
+      A platform designed to assist partners in the game development industry in constructing an in-game item marketplace and centralized gaming hub. The platform provided trading and staking functionalities for in-game digital items, along with centralized user membership management. On the first day of the product launch, it reached hundreds of users, and within a week, it reached a thousand users, with an early-stage product sell-through rate of 90%.
+      <br/><br/>The platform's frontend utilized NextJS and TailwindCSS, with features including item trading, staking, flash swaps, and marketplace functionalities. Designed H5 animations and interactive effects to achieve an industry-popular art style.
+      <br/><br/>Responsible for constructing the code architecture and establishing frontend development standards, arranging project schedules, and allocating personnel. Collaborated with UI and product teams to determine screen logic and art style, and worked with backend developers on the centralized membership system. Assisted in building the product from scratch. After the product launch, collected user feedback and performed frontend performance tuning, art adjustments, and partial frontend code refactoring, optimizing loading speed for the homepage and some marketplace pages.
       `
     },
     "lotusrmp": {
