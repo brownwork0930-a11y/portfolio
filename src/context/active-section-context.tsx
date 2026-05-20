@@ -21,13 +21,8 @@ export const ActiveSectionContext =
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] = useState<SectionName>("About");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
-
-  useEffect(() => {
-    console.log('activeSection', activeSection);
-    
-  }, [activeSection])
 
   return (
     <ActiveSectionContext.Provider

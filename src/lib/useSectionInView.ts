@@ -4,9 +4,10 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-export function useSectionInView(sectionName: string, threshold = 0.75) {
+export function useSectionInView(sectionName: string, _threshold = 0.75) {
   const { ref, inView } = useInView({
-    threshold,
+    threshold: 0,
+    rootMargin: "-40% 0px -50% 0px",
   });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 

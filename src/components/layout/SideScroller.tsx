@@ -9,10 +9,11 @@ import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 
 const SideScroller = ({ data }: { data: LinkData[] }) => {
   const { theme } = useTheme()
-  const { activeSection, setActiveSection } = useActiveSectionContext()
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   const handleLinkClick = (link: LinkData) => {
     setActiveSection(link.key)
+    setTimeOfLastClick(Date.now())
     const dom = document.querySelector(link.hash)
     dom?.scrollIntoView({ behavior: 'smooth' })
   }
