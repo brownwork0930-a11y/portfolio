@@ -20,7 +20,7 @@ export default {
     "title": "Projects",
     "rpgaming_pc": {
       "title": "Lottery Platform",
-      "brand": "RP Gaming",
+      "brand": "Online Lottery Network",
       "description": `
       A lottery network platform for customers to deposit, place bets, and withdraw funds, with an integrated user discussion forum and automated betting robots, complemented by an agent system to implement downstream profit-sharing among users.
       <br/><br/>Tech stack included the use of VueJS combined with SCSS, with separated desktop and mobile applications. This includes creating betting logic for various lotteries, such as composite lotteries and Macau lotteries, as well as designing more complex frontend interfaces such as "bead roads" and trend charts. Implemented features include automatic betting, member reward systems, platform customer service, event notifications, and user discussion forums. Additionally, payment functions like online QR code payments and deposit functions through exchanges were developed. A frontend skin-changing feature was implemented, allowing different CSS styles to be swapped with animations under the same logic to achieve skin changes.
@@ -29,21 +29,21 @@ export default {
     },
     "cgc": {
       "title": "Web3 Gaming APP Center",
-      "brand": "Catheon Gaming",
+      "brand": "Web3 Gaming Ecosystem",
       "description": `
-      The platform's priority was to assist partners in the game development industry in constructing a token launchpad and a marketplace for trading in-game items that was generated into NFTs (similar to Steam, but with NFTs). The platform provided blockchain technologies such as token staking, token swaps, token claims, NFT minting, secondary NFT trading platforms, and lootbox openings, supporting Ethereum and Solana chains. Built centralized member functions, offering users to bind wallets of multiple chains in one setup. The platform was launched along with the its token $CATHEON. On the first day of the product launch, it reached hundreds of users, and within a week, it reached a thousand users, with an early-stage product sell-through rate of 90%.
+      The platform's priority was to assist partners in the game development industry in constructing a token launchpad and a marketplace for trading in-game items that was generated into NFTs (similar to Steam, but with NFTs). The platform provided blockchain technologies such as token staking, token swaps, token claims, NFT minting, secondary NFT trading platforms, and lootbox openings, supporting Ethereum and Solana chains. Built centralized member functions, offering users to bind wallets of multiple chains in one setup. The platform was launched along with its own ecosystem token. On the first day of the product launch, it reached hundreds of users, and within a week, it reached a thousand users, with an early-stage product sell-through rate of 90%.
       <br/><br/>The platform's frontend utilized NextJS and TailwindCSS, with features including the token launch platform, ERC20 token trading, staking, flash swaps, and NFT marketplace functionalities. Designed H5 animations and interactive effects to achieve an industry-popular art style.
-      <br/><br/>I was responsible for constructing the code architecture and established frontend development standards, arranged project schedules, and allocated personnel. Collaborated with UI and product teams to determine screen logic and art style, and worked with backend developers on the centralized membership system. Assisted in building the product from scratch and helped launch the ecosystem currency $CATHEON. After the product launch, collected user feedback and performed frontend performance tuning, art adjustments, and partial frontend code refactoring, optimizing the loading speed for the homepage and some marketplace pages.
+      <br/><br/>I was responsible for constructing the code architecture and established frontend development standards, arranged project schedules, and allocated personnel. Collaborated with UI and product teams to determine screen logic and art style, and worked with backend developers on the centralized membership system. Assisted in building the product from scratch and helped launch the platform's ecosystem token. After the product launch, collected user feedback and performed frontend performance tuning, art adjustments, and partial frontend code refactoring, optimizing the loading speed for the homepage and some marketplace pages.
       `
     },
     "lotusrmp": {
       "title": "Risk Management System",
-      brand: "Lotus Pharmaceutical",
+      brand: "Healthcare Distribution Platform",
       "description": "Designed and built the frontend of an agent management system, which includes its users of pharmacies, physicians, sales, and internal admins across South East Asia, including the majority of pharmacies in the Phillipines and Singapore, with over thousands of users on launch."
     },
     "fqc": {
       "title": "Quality Control System",
-      brand: "Marketech International Corp.",
+      brand: "Manufacturing QC Platform",
       "description": "Built the fullstack of the QC system, including a cross-platform React Native App and a NextJS based admin panel with .NET backend to improve quality assurance through photo shooting and verification on work order and deliverables, with over 500 users."
     }
   },
