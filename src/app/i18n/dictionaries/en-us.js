@@ -11,7 +11,7 @@ export default {
   },
   "about": {
     "title": "About Me",
-    "introduction": "Senior Frontend Engineer with 7+ years of experience specializing in scalable architecture, state management optimization, and client-side performance tuning for high-traffic environments. Expert in the React/Next.js and Vue/Nuxt.js ecosystems, with a history of driving successful migrations that directly improve Core Web Vitals, initial bundle sizes, and user retention. Adept at navigating high-trust, asynchronous remote settings, providing technical leadership to distributed teams, and leveraging cutting-edge AI engineering tools to accelerate product delivery."
+    "introduction": "Senior Frontend Engineer with 7+ years of experience specializing in scalable architecture, state management optimization, and client-side performance tuning for high-traffic environments. Expert in the React/Next.js and Vue/Nuxt.js ecosystems, with a history of driving successful migrations that directly improve Core Web Vitals, initial bundle sizes, and user retention. Adept at navigating high-trust, asynchronous remote settings, providing technical leadership to distributed teams, and leveraging AI-assisted development tools to accelerate product delivery."
   },
   "hard_skills": {
     "title": "Technical Skills"
