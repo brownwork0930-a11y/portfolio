@@ -17,6 +17,9 @@ import SideScroller from "@/components/layout/SideScroller";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const SITE_URL = "https://brown-portfolio-bay.vercel.app";
+const LOCALES = ["en-us", "zh-tw", "zh-cn"] as const;
+
 export async function generateMetadata({ params }: { params: Record<any, any> }): Promise<Metadata> {
   const { lang } = params
   const t = await getDictionary(lang)
@@ -24,8 +27,36 @@ export async function generateMetadata({ params }: { params: Record<any, any> })
   return {
     title: t.metadata.title,
     description: t.metadata.description,
+    metadataBase: new URL(SITE_URL),
+    alternates: {
+      canonical: `/${lang}`,
+      languages: Object.fromEntries(
+        LOCALES.map((l) => [l, `/${l}`])
+      ),
+    },
+    openGraph: {
+      title: t.metadata.title,
+      description: t.metadata.description,
+      url: `${SITE_URL}/${lang}`,
+      siteName: "Brown | Portfolio",
+      locale: lang,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.metadata.title,
+      description: t.metadata.description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true },
+    },
+    icons: {
+      icon: "/favicon.ico",
+    },
   };
-}; 
+};
 
 export default async function RootLayout({
   children,
@@ -39,10 +70,24 @@ export default async function RootLayout({
   const t = await getDictionary(lang)
 
   return (
-    <html>
+    <html lang={lang}>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Hao Ping (Brown) Chuang",
+              jobTitle: "Senior Frontend Engineer",
+              url: SITE_URL,
+              sameAs: [],
+              knowsAbout: ["React", "Next.js", "TypeScript", "Vue", "Frontend Architecture", "Performance Optimization"],
+            }),
+          }}
+        />
         {/* <I18nextProvider i18n={i18n}> */}
           {/* 頁面上方漸層 */}
           {/* original value: #fbe2e3 */}

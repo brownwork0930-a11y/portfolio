@@ -121,7 +121,7 @@ const useData = async (lang: string) => {
       title: t.projects.rpgaming_pc.title,
       brand: t.projects.rpgaming_pc.brand,
       description: t.projects.rpgaming_pc.description,
-      tags: ["VueJS", "Scss"],
+      tags: ["Next.js", "TypeScript", "TailwindCSS"],
       imageUrls: [rpgaming_pc, rpgaming_pc2, rpgaming_pc3, rpgaming_pc4],
     },
     {

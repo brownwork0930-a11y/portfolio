@@ -1,7 +1,7 @@
 export default {
   "metadata": {
-    "title": "Brown | Portfolio Website",
-    "description": "Brown's Portfolio Website"
+    "title": "Brown | Senior Frontend Engineer | React, Next.js, Vue",
+    "description": "Portfolio of Brown (Hao Ping Chuang), a Senior Frontend Engineer with 7+ years specializing in React, Next.js, Vue, TypeScript, and performance optimization for high-traffic applications. Available remotely (GMT+8)."
   },
   "intro": {
     "name": "Brown",
@@ -23,7 +23,7 @@ export default {
       "brand": "White-Label SaaS Platform",
       "description": `
       A B2B platform serving as a white-label SaaS solution for customers to host their own sites and receive ongoing maintenance services, supporting downstream operators with customizable site deployments.
-      <br/><br/>Tech stack included VueJS combined with SCSS, with separate desktop and mobile web versions. Implemented features include member reward systems, platform customer service, event notifications, user discussion forums, online payment functions, and a frontend theming feature allowing different CSS styles to be swapped with animations under the same logic to achieve dynamic skin changes.
+      <br/><br/>Tech stack included Next.js combined with TypeScript and TailwindCSS, with separate desktop and mobile web versions. Implemented features include member reward systems, platform customer service, event notifications, user discussion forums, online payment functions, and a frontend theming feature allowing different CSS styles to be swapped with animations under the same logic to achieve dynamic skin changes.
       <br/><br/>Responsible for setting up the initial code architecture and establishing code standards. Managed frontend task allocation and personnel scheduling for sub-projects. After launch, continued to maintain and operate the frontend, collecting user feedback for optimization and customization. The platform achieved significant improvements in loading speed and user experience, successfully increasing user retention and boosting product revenue.
       `
     },
