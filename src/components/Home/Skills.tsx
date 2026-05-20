@@ -19,8 +19,12 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills({ t, data }: { t: any, data: string[] }) {
+type SkillGroup = { category: string; skills: string[] };
+
+export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
   const { ref } = useSectionInView("Skills");
+
+  let globalIndex = 0;
 
   return (
     <section
@@ -29,23 +33,31 @@ export default function Skills({ t, data }: { t: any, data: string[] }) {
       className="mb-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>{t.hard_skills.title}</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {data.map((skill: string, index: number) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
+      <div className="flex flex-col gap-4">
+        {data.map((group: SkillGroup) => (
+          <div key={group.category} className="flex flex-wrap items-center justify-center gap-2">
+            <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 w-full text-center mb-1">
+              {group.category}
+            </span>
+            {group.skills.map((skill: string) => {
+              const idx = globalIndex++;
+              return (
+                <motion.span
+                  className="bg-white borderBlack rounded-xl px-5 py-3 text-lg text-gray-800 dark:bg-white/10 dark:text-white/80"
+                  key={skill}
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true }}
+                  custom={idx}
+                >
+                  {skill}
+                </motion.span>
+              );
+            })}
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }

@@ -28,8 +28,8 @@ export default {
       `
     },
     "cgc": {
-      "title": "Gaming APP Center",
-      "brand": "Gaming Ecosystem",
+      "title": "APP Center",
+      "brand": "APP Ecosystem",
       "description": `
       A platform designed to assist partners in the game development industry in constructing an in-game item marketplace and centralized gaming hub. The platform provided trading and staking functionalities for in-game digital items, along with centralized user membership management. On the first day of the product launch, it reached hundreds of users, and within a week, it reached a thousand users, with an early-stage product sell-through rate of 90%.
       <br/><br/>The platform's frontend utilized NextJS and TailwindCSS, with features including item trading, staking, flash swaps, and marketplace functionalities. Designed H5 animations and interactive effects to achieve an industry-popular art style.
@@ -39,12 +39,20 @@ export default {
     "lotusrmp": {
       "title": "Risk Management System",
       brand: "Healthcare Distribution Platform",
-      "description": "Designed and built the frontend of an agent management system, which includes its users of pharmacies, physicians, sales, and internal admins across South East Asia, including the majority of pharmacies in the Phillipines and Singapore, with over thousands of users on launch."
+      "description": `
+      Designed and built the frontend of a multi-role agent management system serving pharmacies, physicians, sales representatives, and internal administrators across Southeast Asia — including the majority of pharmacies in the Philippines and Singapore — with over 1,000 users on launch.
+      <br/><br/>Built with VueJS, TypeScript, TailwindCSS, and Ant Design. The system implemented a tiered permission and document-approval mechanism aligned with the company's internal business hierarchy, covering instructional documents, prescriptions, medication orders, and patient consent forms shared across internal and external stakeholders.
+      <br/><br/>Responsible for architecting the frontend codebase and establishing development standards. Collaborated cross-functionally with product and backend teams to translate multi-party business workflows into UI logic, implementing role-based access control for complex document review and approval flows across hierarchical user levels.
+      `
     },
     "fqc": {
       "title": "Quality Control System",
       brand: "Manufacturing QC Platform",
-      "description": "Built the fullstack of the QC system, including a cross-platform React Native App and a NextJS based admin panel with .NET backend to improve quality assurance through photo shooting and verification on work order and deliverables, with over 500 users."
+      "description": `
+      Led fullstack development of a production-line quality control system, including a cross-platform mobile app for production-floor workers and a web-based admin panel for production managers, with approximately 500 active users.
+      <br/><br/>Tech stack included React Native with Native Base for the dual-platform mobile app, and React with Next.js on the frontend paired with a .NET backend and MS SQL database for the admin panel. The system improved inspection efficiency through photo/video capture, watermark verification, and work-order delivery validation.
+      <br/><br/>Responsible for the full development lifecycle from architecture through deployment. Implemented photo/video upload with watermarking, work-order and delivery verification workflows, and real-time inspection dashboards for production management. Designed and coordinated data contracts with backend developers to ensure consistent cross-platform validation logic.
+      `
     }
   },
   "experience": {
