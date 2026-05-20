@@ -7,7 +7,6 @@ import Skills from "@/components/Home/Skills";
 import useData from "@/lib/useData";
 import Experience from '@/components/Home/Experience';
 import SoftSkills from '@/components/Home/SoftSkills';
-import Contact from '@/components/Home/Contact';
 import BackToTop from '@/components/Home/BackToTop';
 
 export default async function Home({ params }: any) {
@@ -18,7 +17,7 @@ export default async function Home({ params }: any) {
 
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro t={t} />
+      <Intro t={t} lang={lang} />
       <SectionDivider />
       <About t={t} />
       <SectionDivider />
@@ -27,7 +26,6 @@ export default async function Home({ params }: any) {
       <SoftSkills t={t} data={softSkillsData} />
       <Projects t={t} data={projectsData} />
       <Experience t={t} data={experiencesData} />
-      <Contact t={t} />
       <BackToTop t={t} />
     </main>
   );

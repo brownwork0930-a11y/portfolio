@@ -27,7 +27,7 @@ import cgc3 from "/public/images/cgc3.png"
 import cgc4 from "/public/images/cgc4.png"
 import cgc_landing from "/public/images/cgc_landing.png"
 
-import { FaBook, FaBriefcase, FaComment, FaGraduationCap, FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaBook, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaUser } from "react-icons/fa";
 
 const useData = async (lang: string) => {
   const t = await getDictionary(lang)
@@ -62,12 +62,6 @@ const useData = async (lang: string) => {
       hash: "#experience",
       key: 'Experience',
       icon: <FaBriefcase />
-    },
-    {
-      name: t.header.contact,
-      hash: "#contact",
-      key: 'Contact',
-      icon: <FaComment />
     },
   ]
 
@@ -127,7 +121,7 @@ const useData = async (lang: string) => {
       title: t.projects.rpgaming_pc.title,
       brand: t.projects.rpgaming_pc.brand,
       description: t.projects.rpgaming_pc.description,
-      tags: ["VueJS", "Scss"],
+      tags: ["Next.js", "TypeScript", "TailwindCSS"],
       imageUrls: [rpgaming_pc, rpgaming_pc2, rpgaming_pc3, rpgaming_pc4],
     },
     {
@@ -154,29 +148,10 @@ const useData = async (lang: string) => {
   ]
 
   const skillsData = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
-    "Vue",
-    "Nuxt.js",
-    "HTML5",
-    "CSS3",
-    "Tailwind",
-    "SCSS",
-    "Zustand",
-    "Redux",
-    "React Native",
-    "Node.js",
-    "NestJS",
-    "GraphQL",
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "AWS",
-    "Docker",
-    "Jest",
-    "Cypress",
+    { category: "Frontend Core", skills: ["React", "Next.js", "TypeScript", "JavaScript", "Vue", "Nuxt.js", "Zustand", "Redux", "React Native"] },
+    { category: "UI & Performance", skills: ["HTML5", "CSS3", "TailwindCSS", "SCSS", "Responsive Web Design", "Core Web Vitals"] },
+    { category: "Testing & Tooling", skills: ["Jest", "Cypress", "Git", "Docker", "CI/CD", "Vercel"] },
+    { category: "Backend & Infra", skills: ["Node.js", "NestJS", "GraphQL", "RESTful APIs", "PostgreSQL", "MySQL", "Redis", "AWS"] },
   ]
 
   const softSkillsData = [

@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import { useActiveSectionContext } from "@/context/active-section-context";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
-export function useSectionInView(sectionName: string, _threshold = 0.75) {
+export default function SectionTracker({ sectionKey }: { sectionKey: string }) {
   const { ref, inView } = useInView({
     threshold: 0,
     rootMargin: "-40% 0px -50% 0px",
@@ -13,11 +13,9 @@ export function useSectionInView(sectionName: string, _threshold = 0.75) {
 
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection(sectionName);
+      setActiveSection(sectionKey);
     }
-  }, [inView, setActiveSection, timeOfLastClick, sectionName]);
+  }, [inView, setActiveSection, timeOfLastClick, sectionKey]);
 
-  return {
-    ref,
-  };
+  return <span ref={ref} />;
 }

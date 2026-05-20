@@ -1,59 +1,13 @@
-"use client";
-
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
 import Project from "./Project";
-import { useSectionInView } from "@/lib/useSectionInView";
 import { ProjectData } from "@/lib/types";
-import Modal from "@/components/common/Modal";
-import { useAppDispatch, useAppSelector } from "@/lib/hooks";
-import { FaTimes } from "react-icons/fa";
-import { setShowProjectImageModal } from "@/lib/features/project/projectSlice";
-import Carousel from "react-multi-carousel";
-import Image from "next/image";
-
-import "react-multi-carousel/lib/styles.css";
-import { useTheme } from "@/context/theme-context";
-import clsx from "clsx";
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
+import ProjectsModal from "./ProjectsModal";
+import SectionWrapper from "@/components/common/SectionWrapper";
 
 export default function Projects({ t, data }: { t: any; data: ProjectData[] }) {
-  const { theme } = useTheme()
-  const dispatch = useAppDispatch()
-  const showProjectImageModal = useAppSelector(state => state.projectSlice.showProjectImageModal)
-  const modalImageList = useAppSelector(state => state.projectSlice.modalImageList)
-  const initalModalImageIndex = useAppSelector(state => state.projectSlice.initalModalImageIndex)
-  const { ref } = useSectionInView("Projects", 0.5);
-  const carouselRef = useRef<any>(null)
-
-  useEffect(() => {
-    // console.log('carouselRef.current', carouselRef.current);
-    if (carouselRef.current && showProjectImageModal) {
-      carouselRef.current.state.currentSlide = initalModalImageIndex
-    }
-  }, [carouselRef.current, initalModalImageIndex, showProjectImageModal])
-
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28 sm:mb-40">
+    <SectionWrapper id="projects" sectionKey="Projects" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>{t.projects.title}</SectionHeading>
       <div>
         {data.map((project: ProjectData, index: number) => (
@@ -62,33 +16,7 @@ export default function Projects({ t, data }: { t: any; data: ProjectData[] }) {
           </React.Fragment>
         ))}
       </div>
-      <Modal show={showProjectImageModal}>
-        <div className="absolute right-0 py-[24px] px-[24px] cursor-pointer" onClick={() => dispatch(setShowProjectImageModal(false))}>
-          <FaTimes className="text-[24px]" />
-        </div>
-        <div className="md:px-[24px] py-[72px]">
-          <Carousel
-            ref={carouselRef}
-            responsive={responsive}
-            itemClass="flex justify-center"
-          >
-            {modalImageList.map((image: any, index) => {
-              return (
-                <Image
-                  key={index}
-                  quality={100}
-                  src={image.src}
-                  alt={image.alt}
-                  className={clsx(
-                    "h-[82vh] w-auto object-contain",
-                    theme === 'light' ? 'bg-gray-300 bg-opacity-[0.3]' : 'bg-gray-700 bg-opacity-[0.3]'
-                  )}
-                />
-              )
-            })}
-          </Carousel>
-        </div>
-      </Modal>
-    </section>
+      <ProjectsModal />
+    </SectionWrapper>
   );
 }

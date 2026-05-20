@@ -1,51 +1,41 @@
-"use client";
-
 import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
-import { useSectionInView } from "@/lib/useSectionInView";
-import { motion } from "framer-motion";
+import SectionWrapper from "@/components/common/SectionWrapper";
+import AnimatedBadge from "./AnimatedBadge";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+type SkillGroup = { category: string; skills: string[] };
 
-export default function Skills({ t, data }: { t: any, data: string[] }) {
-  const { ref } = useSectionInView("Skills");
+export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
+  let globalIndex = 0;
 
   return (
-    <section
+    <SectionWrapper
       id="skills"
-      ref={ref}
+      sectionKey="Skills"
       className="mb-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>{t.hard_skills.title}</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {data.map((skill: string, index: number) => (
-          <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
+      <div className="flex flex-col gap-4">
+        {data.map((group: SkillGroup) => (
+          <div key={group.category} className="flex flex-wrap items-center justify-center gap-2">
+            <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 w-full text-center mb-1">
+              {group.category}
+            </span>
+            {group.skills.map((skill: string) => {
+              const idx = globalIndex++;
+              return (
+                <AnimatedBadge
+                  key={skill}
+                  index={idx}
+                  className="bg-white borderBlack rounded-xl px-5 py-3 text-lg text-gray-800 dark:bg-white/10 dark:text-white/80"
+                >
+                  {skill}
+                </AnimatedBadge>
+              );
+            })}
+          </div>
         ))}
-      </ul>
-    </section>
+      </div>
+    </SectionWrapper>
   );
 }

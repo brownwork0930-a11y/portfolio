@@ -1,3 +1,5 @@
+"use client";
+
 import { setInitalModalImageIndex, setModalImageList, setShowProjectImageModal } from "@/lib/features/project/projectSlice";
 import { useAppDispatch } from "@/lib/hooks";
 import Image, { StaticImageData } from "next/image";
