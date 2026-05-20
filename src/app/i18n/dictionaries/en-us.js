@@ -14,7 +14,7 @@ export default {
     "introduction": "Performance-driven Senior Frontend Engineer with 7+ years of experience specializing in scalable architecture, state management optimization, and client-side performance tuning for high-traffic environments. Expert in the React/Next.js and Vue/Nuxt.js ecosystems, with a track record of driving migrations that improve Core Web Vitals, reduce initial bundle sizes, and boost user retention. Available remotely (GMT+8, flexible to US/EU hours)."
   },
   "hard_skills": {
-    "title": "Hard Skills"
+    "title": "Technical Skills"
   },
   "projects": {
     "title": "Projects",

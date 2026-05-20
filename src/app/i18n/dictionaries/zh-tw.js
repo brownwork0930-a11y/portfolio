@@ -14,7 +14,7 @@ export default {
     "introduction": "具備 7 年以上前端開發經驗的資深工程師，專精於可擴展架構、狀態管理優化及高流量環境的客戶端效能調校。熟悉 React/Next.js 與 Vue/Nuxt.js 生態系，擅長推動技術遷移以提升 Core Web Vitals、減少初始包體積並提升使用者留存率。能在高信任度的非同步遠端環境中獨立作業，為分散式團隊提供技術領導，並善用 AI 工程工具加速產品交付。可遠端工作（GMT+8，可配合美國/歐洲工作時區）。"
   },
   "hard_skills": {
-    "title": "硬技能"
+    "title": "技術技能"
   },
   "projects": {
     "title": "項目經驗",

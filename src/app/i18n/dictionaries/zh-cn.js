@@ -14,7 +14,7 @@ export default {
     "description": "具备 7 年以上前端开发经验的高级工程师，专精于可扩展架构、状态管理优化及高流量环境的客户端性能调优。熟悉 React/Next.js 与 Vue/Nuxt.js 生态系，擅长推动技术迁移以提升 Core Web Vitals、减少初始包体积并提升用户留存率。能在高信任度的异步远端环境中独立作业，为分布式团队提供技术领导，并善用 AI 工程工具加速产品交付。可远端工作（GMT+8，可配合美国/欧洲工作时区）。"
   },
   "hard_skills": {
-    "title": "硬技能"
+    "title": "技术技能"
   },
   "projects": {
     "title": "项目经验",
