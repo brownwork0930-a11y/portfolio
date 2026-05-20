@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { contactEmail } from "@/lib/consts";
 import DownloadButton from "./DownloadButton";
+import SectionTracker from "@/components/common/SectionTracker";
 
 export default function Intro({ t, lang }: { t: any; lang: string }) {
   return (
@@ -9,6 +10,7 @@ export default function Intro({ t, lang }: { t: any; lang: string }) {
       id="about"
       className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
+      <SectionTracker sectionKey="About" />
       <div className="flex items-center justify-center">
         <div className="relative"></div>
       </div>

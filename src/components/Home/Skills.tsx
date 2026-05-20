@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
+import SectionTracker from "@/components/common/SectionTracker";
 
 type SkillGroup = { category: string; skills: string[] };
 
@@ -9,6 +10,7 @@ export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
       id="skills"
       className="mb-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40"
     >
+      <SectionTracker sectionKey="Skills" />
       <SectionHeading>{t.hard_skills.title}</SectionHeading>
       <div className="flex flex-col gap-4">
         {data.map((group: SkillGroup) => (
