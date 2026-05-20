@@ -2,16 +2,16 @@ import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import { contactEmail } from "@/lib/consts";
 import DownloadButton from "./DownloadButton";
-import SectionWrapper from "@/components/common/SectionWrapper";
+import TopSectionTracker from "@/components/common/TopSectionTracker";
 import FadeInElement from "./FadeInElement";
 
 export default function Intro({ t, lang }: { t: any; lang: string }) {
   return (
-    <SectionWrapper
+    <section
       id="about"
-      sectionKey="About"
       className="mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
+      <TopSectionTracker />
       <div className="flex items-center justify-center">
         <div className="relative"></div>
       </div>
@@ -36,6 +36,6 @@ export default function Intro({ t, lang }: { t: any; lang: string }) {
           <FaGithubSquare />
         </a>
       </FadeInElement>
-    </SectionWrapper>
+    </section>
   );
 }
