@@ -27,7 +27,7 @@ import cgc3 from "/public/images/cgc3.png"
 import cgc4 from "/public/images/cgc4.png"
 import cgc_landing from "/public/images/cgc_landing.png"
 
-import { FaBook, FaBriefcase, FaComment, FaGraduationCap, FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaBook, FaBriefcase, FaGraduationCap, FaProjectDiagram, FaUser } from "react-icons/fa";
 
 const useData = async (lang: string) => {
   const t = await getDictionary(lang)
@@ -62,12 +62,6 @@ const useData = async (lang: string) => {
       hash: "#experience",
       key: 'Experience',
       icon: <FaBriefcase />
-    },
-    {
-      name: t.header.contact,
-      hash: "#contact",
-      key: 'Contact',
-      icon: <FaComment />
     },
   ]
 

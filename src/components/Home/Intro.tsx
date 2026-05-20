@@ -1,14 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/useSectionInView";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import { contactEmail } from "@/lib/consts";
 import { handleDownloadFile } from "@/lib/utils";
 import { useRouteParams } from "@/context/route-params-content";
@@ -17,7 +13,6 @@ import toast from "react-hot-toast";
 export default function Intro({ t }: any) {
   const { ref } = useSectionInView("About", 0.5);
   // const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const params = useRouteParams()  
 
   return (
@@ -88,19 +83,6 @@ export default function Intro({ t }: any) {
           delay: 0.1,
         }}
       >
-        <Link
-          // href={`mailto:${contactEmail}`}
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          {t.intro.contact_me}{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
-
         <button
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           onClick={() => {
