@@ -3,12 +3,11 @@ import SectionHeading from "@/components/common/SectionHeading";
 import Project from "./Project";
 import { ProjectData } from "@/lib/types";
 import ProjectsModal from "./ProjectsModal";
-import SectionTracker from "@/components/common/SectionTracker";
+import SectionWrapper from "@/components/common/SectionWrapper";
 
 export default function Projects({ t, data }: { t: any; data: ProjectData[] }) {
   return (
-    <section id="projects" className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionTracker sectionKey="Projects" />
+    <SectionWrapper id="projects" sectionKey="Projects" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>{t.projects.title}</SectionHeading>
       <div>
         {data.map((project: ProjectData, index: number) => (
@@ -18,6 +17,6 @@ export default function Projects({ t, data }: { t: any; data: ProjectData[] }) {
         ))}
       </div>
       <ProjectsModal />
-    </section>
+    </SectionWrapper>
   );
 }

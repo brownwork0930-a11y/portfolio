@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
-import SectionTracker from "@/components/common/SectionTracker";
+import SectionWrapper from "@/components/common/SectionWrapper";
 import AnimatedBadge from "./AnimatedBadge";
 
 type SkillGroup = { category: string; skills: string[] };
@@ -9,11 +9,11 @@ export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
   let globalIndex = 0;
 
   return (
-    <section
+    <SectionWrapper
       id="skills"
+      sectionKey="Skills"
       className="mb-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionTracker sectionKey="Skills" />
       <SectionHeading>{t.hard_skills.title}</SectionHeading>
       <div className="flex flex-col gap-4">
         {data.map((group: SkillGroup) => (
@@ -36,6 +36,6 @@ export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
           </div>
         ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
