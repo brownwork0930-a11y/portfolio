@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ProjectData } from "@/lib/types";
 import ImageCarousel from "./ImageCarousel";
 import ProjectExpandButton from "./ProjectExpandButton";
+import ProjectScrollWrapper from "./ProjectScrollWrapper";
 import { StaticImageData } from "next/image";
 
 type CarouselImage = { src: StaticImageData; alt: string };
@@ -18,7 +19,7 @@ export default function Project({
     : [];
 
   return (
-    <div className="group mb-3 sm:mb-8 last:mb-0">
+    <ProjectScrollWrapper>
       <section className="bg-gray-100 max-w-[60rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="sm:hidden flex justify-center pt-4">
           <ImageCarousel images={imagesArr} />
@@ -78,6 +79,6 @@ export default function Project({
             ))
           : null}
       </section>
-    </div>
+    </ProjectScrollWrapper>
   );
 }

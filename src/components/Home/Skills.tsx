@@ -1,10 +1,13 @@
 import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
 import SectionTracker from "@/components/common/SectionTracker";
+import AnimatedBadge from "./AnimatedBadge";
 
 type SkillGroup = { category: string; skills: string[] };
 
 export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
+  let globalIndex = 0;
+
   return (
     <section
       id="skills"
@@ -18,14 +21,18 @@ export default function Skills({ t, data }: { t: any, data: SkillGroup[] }) {
             <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 w-full text-center mb-1">
               {group.category}
             </span>
-            {group.skills.map((skill: string) => (
-              <span
-                className="bg-white borderBlack rounded-xl px-5 py-3 text-lg text-gray-800 dark:bg-white/10 dark:text-white/80"
-                key={skill}
-              >
-                {skill}
-              </span>
-            ))}
+            {group.skills.map((skill: string) => {
+              const idx = globalIndex++;
+              return (
+                <AnimatedBadge
+                  key={skill}
+                  index={idx}
+                  className="bg-white borderBlack rounded-xl px-5 py-3 text-lg text-gray-800 dark:bg-white/10 dark:text-white/80"
+                >
+                  {skill}
+                </AnimatedBadge>
+              );
+            })}
           </div>
         ))}
       </div>

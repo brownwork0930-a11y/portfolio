@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeading from "@/components/common/SectionHeading";
 import SectionTracker from "@/components/common/SectionTracker";
+import AnimatedBadgeLi from "./AnimatedBadgeLi";
 
 export default function SoftSkills({ t, data }: { t: any, data: string[] }) {
   return (
@@ -12,12 +13,13 @@ export default function SoftSkills({ t, data }: { t: any, data: string[] }) {
       <SectionHeading>{t.soft_skills.title}</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {data.map((skill: string, index: number) => (
-          <li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+          <AnimatedBadgeLi
             key={index}
+            index={index}
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
           >
             {skill}
-          </li>
+          </AnimatedBadgeLi>
         ))}
       </ul>
     </section>
