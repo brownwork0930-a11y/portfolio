@@ -17,7 +17,7 @@ export default async function Home({ params }: any) {
 
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro t={t} />
+      <Intro t={t} lang={lang} />
       <SectionDivider />
       <About t={t} />
       <SectionDivider />
