@@ -11,7 +11,7 @@ export default {
   },
   "about": {
     "title": "關於我及求職意向",
-    "introduction": "專職於前端開發的軟體工程師，主要服務於博彩及區塊鏈領域。曾參與彩票包網、體育包網、區塊鏈整合平台、交易所等大型項目開發，並曾參與新項目 0-1 的架構規劃與建置。曾服務於新創公司並參與公司產品從無到有的過程，及。負責前端代碼的架構設計、任務安排與時程調控。技術方面專精於 React 及 Vue 前端框架，熟悉前端打包與發佈流程，及有 SSR 框架如 NextJS 和 NuxtJS 的使用經驗。正在尋找全職前端開發職位。"
+    "introduction": "具備 7 年以上前端開發經驗的資深工程師，專精於可擴展架構、狀態管理優化及高流量環境的客戶端效能調校。熟悉 React/Next.js 與 Vue/Nuxt.js 生態系，擅長推動技術遷移以提升 Core Web Vitals、減少初始包體積並提升使用者留存率。能在高信任度的非同步遠端環境中獨立作業，為分散式團隊提供技術領導，並善用 AI 工程工具加速產品交付。可遠端工作（GMT+8，可配合美國/歐洲工作時區）。"
   },
   "hard_skills": {
     "title": "硬技能"
@@ -42,64 +42,63 @@ export default {
   "experience": {
     "title": "工作經驗",
     "first": {
-      "title": "RP Gaming",
+      "title": "AU Soft",
       role: "資深前端工程師",
-      "location": "遠程",
+      "location": "遠端",
       "description": `
-        <li>負責彩票平台項目之前台與後台重構規劃，提高了使用者留存率超過 20%。</li>
-        <li>參與包含前台 Web 版與手機版的開發且對相容性進行調試。</li>
-        <li>管理約 5-7 人的前端開發團隊。</li>
-        <li>負責制定前端項目時程與分配任務。</li>
-        <li>負責制定前端代碼架構與開發規範。</li>
-        <li>負責前端項目性能調試與優化。</li>
-        <li>負責電話銷售部門後台管理系統功能開發。</li>
-        <li>與後端協調並制定 API 規格與通訊協議等前後端交互邏輯。</li>
-        <li>與產品和 UI 制定畫面樣式、使用者體驗與畫面流程。</li>
-        <li>提供初階同事技術指導。</li>
+        <li>主導核心產品前端架構從 MVC 重構至 MVVM，採用 Next.js App Router 與 Zustand，降低初始包體積 30%，提升使用者留存率 20%。</li>
+        <li>為 5–7 人分散式工程團隊建立代碼品質標準與架構規範，執行深度代碼審查，並建置搭載 Jest/Cypress 測試套件的 CI/CD 流程，確保覆蓋率達 90% 以上。</li>
+        <li>設計低延遲 UI 資料輪詢機制與即時狀態同步，確保跨瀏覽器介面在高併發流量下的即時更新。</li>
       `,
-      "date": "12/2022 - 03/2024"
+      "date": "11/2024 - 03/2026"
     },
     "second": {
-      "title": "Catheon Gaming",
-      role: "資深前端工程師",
-      "location": "遠程",
+      "title": "Oracle",
+      role: "首席前端工程師",
+      "location": "台北, 台灣",
       "description": `
-        <li>成功與團隊推出了區塊鍊整合平台 Catheon Gaming App Center，上線首週達千位使用者。</li>
-        <li>參與 $CATHEON 生態圈代幣發行。</li>
-        <li>參與鏈遊 SolChicks P2E Game 的推出。</li>
-        <li>負責交易所項目開發，包含 Web 版建置與 App 版上架。</li>
-        <li>負責處理前端需求設計與版型規劃。</li>
-        <li>負責與業務團隊溝通與搜集用戶反饋。</li>
-        <li>負責前端任務分配與時程規劃。</li>
+        <li>擔任商業智慧與企業銀行平台的首席前端工程師，將複雜的企業產品需求轉化為強健、可重用的 UI 元件庫。</li>
+        <li>作為全球產品管理與本地工程團隊之間的核心技術橋樑，確保系統能力符合嚴格的企業安全與合規標準。</li>
+        <li>診斷並解決舊有儀表板中的關鍵效能瓶頸與記憶體洩漏問題，提升資料渲染速度 5%。</li>
+      `,
+      "date": "01/2023 - 09/2024"
+    },
+    "third": {
+      "title": "Artisse Interactive",
+      role: "創始前端工程師",
+      "location": "遠端",
+      "description": `
+        <li>從零開始架構高併發數位資產中心與 NFT 電商平台，以 Next.js、TypeScript 及優化的全域狀態管理支撐多鏈交易流程。</li>
+        <li>在 6 個月內完成從藍圖到正式上線，客戶端基礎架構擴展至支援高峰期 10,000+ 同時在線用戶。</li>
+        <li>設計安全可預測的 API 契約，並透過多錢包協議管理高頻異步身份驗證，確保 UI 資料完整性。</li>
       `,
       "date": "12/2021 - 12/2022"
     },
-    "third": {
-      "title": "I-Game Tech",
-      role: "前端工程師",
-      "location": "台北, 台灣",
+    "fourth": {
+      "title": "Bet365",
+      role: "軟體工程師",
+      "location": "遠端",
       "description": `
-        <li>參與體育前端代碼重構，將使用者留存率提高了10%。</li>
-        <li>負責體育包網平台的前台與中後台功能開發。</li>
-        <li>與後端，產品，及 UI 進行跨部門協作，制定畫面邏輯、畫面樣式與 API 規格。</li>
+        <li>參與大規模舊系統遷移至現代 Type-Safe React 生態系，導入設計系統與高效重渲染邏輯，提升使用者留存率 10%。</li>
+        <li>與 12 人分散式開發團隊協作，實作穩健的前端架構並推動持續整合最佳實踐。</li>
+        <li>執行深度代碼審查，撰寫完整的前端整合測試以確保企業級穩定性。</li>
       `,
       "date": "12/2019 - 11/2021"
     },
-    "fourth": {
-      "title": "Linkedin",
-      role: "前端工程師",
-      "location": "加州, 美國",
+    "fifth": {
+      "title": "LinkedIn",
+      role: "軟體工程師",
+      "location": "美國",
       "description": `
-        <li>參與社群媒體前台項目開發，針對使用者體驗做優化，獲使用者正面反饋。</li>
-        <li>提升前端首次渲染速度 10%。</li>
-        <li>與 UI 和 PM 端對接使用者反饋並持續優化產品。</li>
-        <li>與後端工程師協作並討論 API 規格。</li>
+        <li>開發並優化供數百萬日活用戶使用的全球應用程式模組化網頁佈局。</li>
+        <li>透過關鍵渲染路徑優化，將互動時間（TTI）縮短最高達 15%。</li>
+        <li>撰寫完整的技術設計文件，並參與資料驅動的 UX 優化調整。</li>
       `,
       "date": "05/2018 - 11/2019"
     },
-    "fifth": {
-      "title": "Boston University",
-      role: "學士, 資訊工程",
+    "sixth": {
+      "title": "波士頓大學",
+      role: "學士，資訊科學（STEM 認定）",
       "location": "麻州, 美國",
       "description": "",
       "date": "08/2014 - 05/2018"
@@ -107,9 +106,9 @@ export default {
   },
   "soft_skills": {
     title: "軟技能",
-    technical_leadership: '2 年技術管理經驗',
-    project_management: '專案人員及時程管理能力',
-    cross_functional_communication: '跨部門溝通能力',
+    technical_leadership: '技術領導與代碼品質',
+    project_management: '產品擁有權與端對端交付',
+    cross_functional_communication: '遠端協作與非同步溝通',
   },
   "header": {
     "home": "首頁",

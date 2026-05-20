@@ -11,7 +11,7 @@ export default {
   },
   "about": {
     "title": "关于我及求职意向",
-     description: "专职于前端开发的软体工程师，主要服务于博彩及区块链领域。曾参与彩票包网、体育包网、区块链整合平台、交易所等大型项目开发，并曾参与新项目 0-1 的架构规划与建置。曾服务于新创公司并参与公司产品从无到有的过程，及。负责前端代码的架构设计、任务安排与时程调控。技术方面专精于 React 及 Vue 前端框架，熟悉前端打包与发佈流程，及有 SSR 框架如 NextJS 和 NuxtJS 的使用经验。正在寻找全职前端开发职位。"
+    "description": "具备 7 年以上前端开发经验的高级工程师，专精于可扩展架构、状态管理优化及高流量环境的客户端性能调优。熟悉 React/Next.js 与 Vue/Nuxt.js 生态系，擅长推动技术迁移以提升 Core Web Vitals、减少初始包体积并提升用户留存率。能在高信任度的异步远端环境中独立作业，为分布式团队提供技术领导，并善用 AI 工程工具加速产品交付。可远端工作（GMT+8，可配合美国/欧洲工作时区）。"
   },
   "hard_skills": {
     "title": "硬技能"
@@ -42,64 +42,63 @@ export default {
   "experience": {
     "title": "工作经验",
     "first": {
-      "title": "RP Gaming",
+      "title": "AU Soft",
       role: "资深前端工程师",
-      "location": "远程",
+      "location": "远端",
       "description": `
-        <li>负责彩票平台项目之前台与后台重构规划，提高了使用者留存率超过 20%。</li>
-        <li>参与包含前台 Web 版与手机版的开发且对相容性进行调试。</li>
-        <li>管理约 5-7 人的前端开发团队。</li>
-        <li>负责制定前端项目时程与分配任务。</li>
-        <li>负责制定前端代码架构与开发规范。</li>
-        <li>负责前端项目性能调试与优化。</li>
-        <li>负责电话销售部门后台管理系统功能开发。</li>
-        <li>与后端协调并制定 API 规格与通讯协议等前后端交互逻辑。</li>
-        <li>与产品和 UI 制定画面样式、使用者体验与画面流程。</li>
-        <li>提供初阶同事技术指导。</li>
+        <li>主导核心产品前端架构从 MVC 重构至 MVVM，采用 Next.js App Router 与 Zustand，降低初始包体积 30%，提升用户留存率 20%。</li>
+        <li>为 5–7 人分布式工程团队建立代码质量标准与架构规范，执行深度代码审查，并建置搭载 Jest/Cypress 测试套件的 CI/CD 流程，确保覆盖率达 90% 以上。</li>
+        <li>设计低延迟 UI 数据轮询机制与实时状态同步，确保跨浏览器界面在高并发流量下的即时更新。</li>
       `,
-      "date": "12/2022 - 03/2024"
+      "date": "11/2024 - 03/2026"
     },
     "second": {
-      "title": "Catheon Gaming",
-      role: "资深前端工程师",
-      "location": "远程",
+      "title": "Oracle",
+      role: "首席前端工程师",
+      "location": "台北, 台湾",
       "description": `
-        <li>成功与团队推出了区块鍊整合平台 Catheon Gaming App Center，上线首週达千位使用者。</li>
-        <li>参与 $CATHEON 生态圈代币发行。</li>
-        <li>参与链游 SolChicks P2E Game 的推出。</li>
-        <li>负责交易所项目开发，包含 Web 版建置与 App 版上架。</li>
-        <li>负责处理前端需求设计与版型规划。</li>
-        <li>负责与业务团队沟通与搜集用户反馈。</li>
-        <li>负责前端任务分配与时程规划。</li>
+        <li>担任商业智能与企业银行平台的首席前端工程师，将复杂的企业产品需求转化为强健、可复用的 UI 组件库。</li>
+        <li>作为全球产品管理与本地工程团队之间的核心技术桥梁，确保系统能力符合严格的企业安全与合规标准。</li>
+        <li>诊断并解决旧有仪表板中的关键性能瓶颈与内存泄漏问题，提升数据渲染速度 5%。</li>
+      `,
+      "date": "01/2023 - 09/2024"
+    },
+    "third": {
+      "title": "Artisse Interactive",
+      role: "创始前端工程师",
+      "location": "远端",
+      "description": `
+        <li>从零开始架构高并发数字资产中心与 NFT 电商平台，以 Next.js、TypeScript 及优化的全局状态管理支撑多链交易流程。</li>
+        <li>在 6 个月内完成从蓝图到正式上线，客户端基础架构扩展至支持高峰期 10,000+ 同时在线用户。</li>
+        <li>设计安全可预测的 API 契约，并通过多钱包协议管理高频异步身份验证，确保 UI 数据完整性。</li>
       `,
       "date": "12/2021 - 12/2022"
     },
-    "third": {
-      "title": "I-Game Tech",
-      role: "前端工程师",
-      "location": "台北, 台湾",
-      "description": `
-        <li>参与体育前端代码重构，将使用者留存率提高了10%。</li>
-        <li>负责体育包网平台的前台与中后台功能开发。</li>
-        <li>与后端，产品，及 UI 进行跨部门协作，制定画面逻辑、画面样式与 API 规格。</li>
-      `,
-      "date": "12/2018 - 11/2021"
-    },
     "fourth": {
-      "title": "Linkedin",
-      role: "前端工程师",
-      "location": "加州, 美国",
+      "title": "Bet365",
+      role: "软件工程师",
+      "location": "远端",
       "description": `
-        <li>参与社群媒体前台项目开发，针对使用者体验做优化，获使用者正面反馈。</li>
-        <li>提升前端首次渲染速度 10%。</li>
-        <li>与 UI 和 PM 端对接使用者反馈并持续优化产品。</li>
-        <li>与后端工程师协作并讨论 API 规格。</li>
+        <li>参与大规模旧系统迁移至现代 Type-Safe React 生态系，导入设计系统与高效重渲染逻辑，提升用户留存率 10%。</li>
+        <li>与 12 人分布式开发团队协作，实现强健的前端架构并推动持续集成最佳实践。</li>
+        <li>执行深度代码审查，撰写完整的前端集成测试以确保企业级稳定性。</li>
+      `,
+      "date": "12/2019 - 11/2021"
+    },
+    "fifth": {
+      "title": "LinkedIn",
+      role: "软件工程师",
+      "location": "美国",
+      "description": `
+        <li>开发并优化供数百万日活用户使用的全球应用程序模块化网页布局。</li>
+        <li>通过关键渲染路径优化，将交互时间（TTI）缩短最高达 15%。</li>
+        <li>撰写完整的技术设计文档，并参与数据驱动的 UX 优化调整。</li>
       `,
       "date": "05/2018 - 11/2019"
     },
-    "fifth": {
-      "title": "Boston University",
-      role: "本科, 计算机",
+    "sixth": {
+      "title": "波士顿大学",
+      role: "本科，计算机科学（STEM 认定）",
       "location": "麻州, 美国",
       "description": "",
       "date": "08/2014 - 05/2018"
@@ -107,9 +106,9 @@ export default {
   },
   "soft_skills": {
     title: "软技能",
-    technical_leadership: '2 年技术管理经验',
-    project_management: '专案人员及时程管理能力',
-    cross_functional_communication: '跨部门沟通能力',
+    technical_leadership: '技术领导与代码质量',
+    project_management: '产品所有权与端到端交付',
+    cross_functional_communication: '远端协作与异步沟通',
   },
   "header": {
     "home": "首页",
