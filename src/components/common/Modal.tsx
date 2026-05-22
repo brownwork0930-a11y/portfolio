@@ -29,18 +29,47 @@ export default function Modal({ children, show }: { children: React.ReactNode, s
     )
   }, [show, theme, children])
 
-  function disableOnScroll(event: Event) {
-    event.preventDefault();
-  }
-
   React.useEffect(() => {
-    if (show) {
-      document.body.style.overflowY = 'hidden'
-      document.body.addEventListener('scroll', disableOnScroll, { passive: false });
-    } else {
-      document.body.style.overflowY = 'auto'
-      document.body.removeEventListener('scroll', disableOnScroll)
+    if (!show) return;
+
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+    // Snapshot styles to restore later
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+      overflow: body.style.overflow,
+      paddingRight: body.style.paddingRight,
+    };
+
+    // Lock: position fixed pins the page; top offset preserves visible scroll.
+    // This is the only reliable way to stop iOS Safari from scrolling the background.
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}px`;
+    body.style.left = '0';
+    body.style.right = '0';
+    body.style.width = '100%';
+    body.style.overflow = 'hidden';
+    if (scrollbarWidth > 0) {
+      body.style.paddingRight = `${scrollbarWidth}px`;
     }
+
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.left = prev.left;
+      body.style.right = prev.right;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      body.style.paddingRight = prev.paddingRight;
+      // Restore scroll position without smooth-scrolling
+      window.scrollTo(0, scrollY);
+    };
   }, [show])
 
   React.useEffect(() => setMounted(true), []);
