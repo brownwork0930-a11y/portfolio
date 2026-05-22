@@ -35,7 +35,7 @@ export default function ProjectsModal() {
 
   return (
     <Modal show={showProjectImageModal}>
-      <div className="absolute right-0 py-[24px] px-[24px] cursor-pointer" onClick={() => dispatch(setShowProjectImageModal(false))}>
+      <div className="absolute top-0 right-0 py-[24px] px-[24px] cursor-pointer z-10" onClick={() => dispatch(setShowProjectImageModal(false))}>
         <FaTimes className="text-[24px]" />
       </div>
       <div className="md:px-[24px] py-[72px]">

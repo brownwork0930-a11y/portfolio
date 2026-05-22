@@ -19,7 +19,7 @@ export default function Modal({ children, show }: { children: React.ReactNode, s
       >
         <div
           className={clsx(
-            "w-[100vw] h-[100vh] md:w-[95vw] md:h-[95vh] md:rounded-[8px] relative",
+            "w-[100vw] h-[100dvh] md:w-[95vw] md:h-[95vh] md:rounded-[8px] relative",
             theme === 'light' ? 'bg-white' : 'bg-gray-800'
           )}
         >
