@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 const SITE_URL = "https://brown-portfolio-bay.vercel.app";
-const LOCALES = ["en-us", "zh-tw", "zh-cn"];
+const LOCALES = ["en-us", "zh-tw"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return LOCALES.map((lang) => ({

@@ -18,7 +18,7 @@ import SideScroller from "@/components/layout/SideScroller";
 const inter = Inter({ subsets: ["latin"] });
 
 const SITE_URL = "https://brown-portfolio-bay.vercel.app";
-const LOCALES = ["en-us", "zh-tw", "zh-cn"] as const;
+const LOCALES = ["en-us", "zh-tw"] as const;
 
 export async function generateMetadata({ params }: { params: Record<any, any> }): Promise<Metadata> {
   const { lang } = params
